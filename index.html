@@ -69,7 +69,7 @@ img {
 </div>
 
 <div style="font-family:verdana;">
-  <h2  style="color:white">All Projects</h2>
+  <h2  style="color:white">Games & Simulations</h2>
 </div>
 
 <a href="https://github.com/Coder-Dude10/aircraft-blaster"><img src="https://cdn2.scratch.mit.edu/get_image/project/615379105_282x210.png" alt="Aircraft Blaster" style="width:375px;height:300px;"></a>
@@ -82,6 +82,65 @@ img {
 </br>
 
 <a href="https://github.com/Coder-Dude10/ti-83-84-snake"><img src="https://i.ytimg.com/vi/8xLburyPUi8/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAsn9amw7xZjXMklsS1ZLZt50p_uQ" alt="TI-83/84 Snake" style="width:375px;height:300px;"></a>
+</div>
+
+<style>
+.accordion {
+  background-color: #343d69;
+  color: #000000;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #7c899c; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color:#161e4f;
+  overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+<div style="font-family:verdana;">
+  <h2  style="color:white">Algorithms & Equations</h2>
+</div>
+
+<button class="accordion">Sand Ripples</button>
+<div class="panel">
+  <p style="color:wite">Gravity causes sand to saltate and create ripples. The height of the sand after saltating at x and y position equal to the sand before saltating at x and y positon minus the amount of sand being moved at x and y positon. A more in-depth explation of this phenomenon is that the height of the sand after saltating at x position plus the distance that the sand moves horizontally plus the distance that the sand moves vertically is equal to the sand before saltating at x position plus the distance that the sand moves horizontally plus the distance that the sand moves vertically minus the amount of sand being moved at x and y positon.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+  </div>
+
+<div style="font-family:verdana;">
+  <h2  style="color:white">Jigsaw Puzzle!</h2>
 </div>
 
 <iframe style="width: 100%; height: 600px; max-height: 90vh; border-style: solid; border-width: 2px; border-color: #888" allowFullScreen="true" src="https://www.jigsawexplorer.com/online-jigsaw-puzzle-player.html?frm=1&url=aHR0cHM6Ly9nb3dpdGhjb2RlLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMS8wNC90b3AtcHJvZ3JhbW1pbmctbGFuZ3VhZ2VzLmpwZw~~" title="Jigsaw Puzzle">Jigsaw Puzzle</iframe>

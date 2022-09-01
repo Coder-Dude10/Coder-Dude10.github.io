@@ -149,6 +149,21 @@ p {
 <div class="panel" style="font-family:verdana;">
   <p style="color:white">Gravity causes sand to saltate and create ripples. The height of the sand after saltating at x and y position equal to the sand before saltating at x and y positon minus the amount of sand being moved at x and y positon. A more in-depth explation of this phenomenon is that the height of the sand after saltating at x position plus the distance that the sand moves horizontally plus the distance that the sand moves vertically is equal to the sand before saltating at x position plus the distance that the sand moves horizontally plus the distance that the sand moves vertically minus the amount of sand being moved at x and y positon.</p>
 </div>
+  
+<button class="accordion">Wave Function Collapse (Not Qauntum Mechanics)</button>
+<div class="panel" style="font-family:verdana;">
+  <p style="color:white">Read the input bitmap and count NxN patterns.
+(optional) Augment pattern data with rotations and reflections.
+Create an array with the dimensions of the output (called "wave" in the source). Each element of this array represents a state of an NxN region in the output. A state of an NxN region is a superposition of NxN patterns of the input with boolean coefficients (so a state of a pixel in the output is a superposition of input colors with real coefficients). False coefficient means that the corresponding pattern is forbidden, true coefficient means that the corresponding pattern is not yet forbidden.
+Initialize the wave in the completely unobserved state, i.e. with all the boolean coefficients being true.
+Repeat the following steps:
+Observation:
+Find a wave element with the minimal nonzero entropy. If there is no such elements (if all elements have zero or undefined entropy) then break the cycle (4) and go to step (5).
+Collapse this element into a definite state according to its coefficients and the distribution of NxN patterns in the input.
+Propagation: propagate information gained on the previous observation step.
+By now all the wave elements are either in a completely observed state (all the coefficients except one being zero) or in the contradictory state (all the coefficients being zero). In the first case return the output. In the second case finish the work without returning anything.
+Source: <a href="https://github.com/mxgmn/WaveFunctionCollapse">https://github.com/mxgmn/WaveFunctionCollapse</a></p>
+</div>
 
 <script>
 var acc = document.getElementsByClassName("accordion");
